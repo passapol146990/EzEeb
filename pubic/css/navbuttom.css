@@ -1,0 +1,10 @@
+.navbuttom{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    width: 500px;
+}
