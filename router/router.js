@@ -31,7 +31,25 @@ router.get('/',async (req,res)=>{
   sessions.inout = '<a class="btn btn-outline-light" href="/loginform">เข้าสู่ระบบ</a>'
   res.render('index.ejs',{sessions:sessions})
 })
-
+let form_err =[
+  {
+    name:'',
+    username:'',
+    password:'',
+    gmail:'',
+    phone:''
+  },
+  {
+    name:'',
+    username:'',
+    password:'',
+    gmail:'',
+    phone:''
+  },
+  {
+    alert_success:''
+  }
+]
 router.get('/regform',(req,res)=>{
   form_err[2].alert_success = ''
   res.render('regform.ejs',{form_err:form_err})
