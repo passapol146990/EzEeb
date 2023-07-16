@@ -26,8 +26,8 @@ router.get('/',async (req,res)=>{
   await db.collection('views').add({views:sessions.views})
   if(false){
     sessions.data = data
-    sessions.name = datapass[req.cookies.username].name
-    sessions.username = req.cookies.username
+    // sessions.name = datapass[req.cookies.username].name
+    // sessions.username = req.cookies.username
     sessions.reg_show = ''
     sessions.inout = '<a class="btn btn-outline-danger" href="/logout">ออกจากระบบ</a>'
   }else{
