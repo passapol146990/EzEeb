@@ -32,4 +32,15 @@ router.get('/',async (req,res)=>{
   res.render('index.ejs',{sessions:sessions})
 })
 
+router.get('/regform',(req,res)=>{
+  form_err[2].alert_success = ''
+  res.render('regform.ejs',{form_err:form_err})
+})
+
+router.get('/loginform',(req,res)=>{
+  sessions.title = ''
+  sessions.reg_show = ''
+  res.render('loginform.ejs',{sessions:sessions})
+})
+
 module.exports = router
