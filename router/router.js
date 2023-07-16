@@ -24,7 +24,7 @@ router.get('/',async (req,res)=>{
   view = views.docs.map(view => view.data())
   sessions.views = view[0].views + 1
   await db.collection('views').add({views:sessions.views})
-  if(req.cookies.login){
+  if(false){
     sessions.data = data
     sessions.name = datapass[req.cookies.username].name
     sessions.username = req.cookies.username
